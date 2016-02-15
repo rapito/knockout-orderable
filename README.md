@@ -35,6 +35,10 @@ It's also possible to sort by nested attibutes by separating the attribute names
 
 	<th><a href="#" data-bind="orderable: {collection: 'people', field: 'pet.name'}">Pet name</a></th>
 
+Secondary sort is possible by passing the `thenBy` param with comma separated attribute names:
+	
+	<th><a href="#" data-bind="orderable: {collection: 'people', field: 'salary', thenBy: 'firstName, age'}">Pet name</a></th>
+
 See full examples in examples folder.
 
 ##Dependencies
