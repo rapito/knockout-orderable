@@ -40,7 +40,7 @@
         if(!thenBy)  return sortResults;
 
         var thenByFields = thenBy.split(','); // extract fields
-        console.log('sortResults', thenByFields, left, right, field);
+        //console.log('sortResults', thenByFields, left, right, field);
 
         for (var i = 0; i < thenByFields.length; i++) {
 
