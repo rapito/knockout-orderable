@@ -24,9 +24,14 @@
     },
 
     compare: function (left, right) {
-        if (typeof left === 'string' || typeof right === 'string') {
-            return left ? left.localeCompare(right) : 1;
-        }
+		
+        left = left == null ? '' : left;
+        right = right == null ? '' : right;
+		
+        //if (typeof left === 'string' || typeof right === 'string') {
+        //    return left ? left.localeCompare(right) : 1;
+        //}
+		
         if (left > right)
             return 1;
 
